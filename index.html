@@ -1,0 +1,125 @@
+<html>
+
+<head>
+  <title>Bookmark</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+  <link rel="icon" href="./images/icon (1).png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <!-- Start Form -->
+  <section class="bookmark-form" id="to-top">
+    <div class="container">
+      <div class="form-container d-flex justify-content-center">
+        <div class="form w-50 py-5 my-5">
+          <div class="form-head text-center mb-5">
+            <h1>Bookmarker</h1>
+            <p>Bookmark your favorite sites</p>
+          </div>
+
+          <div class="form-group">
+            <label>Site Name</label> <span class="text-danger"> * </span>
+            <input type="text" id="bookmark-name" class="form-control" placeholder="&#xf02e; &nbsp; Bookmark Name"
+              style="font-family:  'Source Sans Pro', sans-serif" />
+            <div id="bookmarkNameAlert" class="alert alert-danger d-none">
+              BookmarkName must start with capital letter, contains 4:10 characters
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Site URL</label> <span class="text-danger"> * </span>
+            <input type="text" id="bookmark-url" class="form-control" placeholder="&#xf08d; &nbsp; Bookmark URL"
+              style="font-family: 'Source Sans Pro', sans-serif" />
+            <div id="bookmarkURLAlert" class="alert alert-danger d-none">
+              Bookmark URL must start with: (www.), then any char and ends with (.com, .org or .net)
+            </div>
+          </div>
+
+          <div class="form-group text-center mt-5">
+            <p id="empty-input-alert" class="text-danger"></p>
+            <a href="#bookmark-card" class="text-decoration-none" id="bookmark-card-href">
+              <button class="btn pink-btn" id="add-btn" disabled>Add Bookmark</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="to-down-arrow">
+        <a href="#to-down" class="text-decoration-none text-white">
+          <i class="fas fa-chevron-down"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Form -->
+
+  <!-- Start Table -->
+  <section class="display-table pt-5 pb-3" id="to-down">
+    <div class="container">
+      <div class="bookmark-container d-flex justify-content-center">
+        <div class="display-table-body w-50">
+
+          <div class="form-group mt-3 mb-5">
+            <input type="text" id="search-input" class="form-control" placeholder="&#xf002; &nbsp; Search"
+              style="font-family: 'Source Sans Pro', sans-serif" />
+          </div>
+
+          <div id="bookmark-card-container">
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Table -->
+
+  <!--Start Footrt -->
+  <footer>
+    <div class="container">
+      <div class="social-media text-white text-center my-2">
+        <a target='blank' href="http://facebook.com/Elbayoumi.10">
+          <i class="fa-brands fa-facebook "></i>
+        </a>
+        <a target='blank' href="">
+          <i class="fa-brands fa-github mx-2 "></i>
+        </a>
+        <a target='blank' href="http://linkedin.com/in/mohamed-el-bayoumi-67b0a6260">
+          <i class="fa-brands fa-linkedin "></i>
+        </a>
+        <a target='blank' href="http://instagram.com/mohamedel_bayoumi">
+          <i class="fa-brands fa-instagram mx-2 "></i>
+        </a>
+        <a target='blank' href="http://twitter.com/elbayoumi_10">
+          <i class="fa-brands fa-twitter "></i>
+        </a>
+        <p class="text-center text-white mb-0 mt-1" style="font-family:  'Source Sans Pro', sans-serif">
+          Copyright, <span class="text-danger"> &copy; 2021</span> Designed by Menna El-adl. All rights
+          <span class="text-danger">reserved</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!--End Footrt -->
+
+  <!-- To Top Arrow -->
+  <div class="to-top-arrow">
+    <a href="#to-top" class="text-decoration-none text-white">
+      <i class="fas fa-chevron-up"></i>
+    </a>
+  </div>
+
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
